@@ -1,12 +1,18 @@
 .faqs{
     background-color: #FFFFFF;
     width: 100%;
-    display: flex;
     justify-content: center;
     text-align: center;
-    height: 500px;
+    padding: 20px;
 }
 .title-faqs{
     font-size: 36px;
     color: #424B54;
+}
+.listado-faqs{
+    color: #424B54;
+    font-size: 20px;
+}
+.style-li{
+    list-style: none;
 }

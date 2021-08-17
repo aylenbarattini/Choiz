@@ -3,6 +3,7 @@ import './Styles/App.scss';
 import Navbar from './components/Navbar/Navbar';
 import Main from './components/Main';
 import Preguntas from './components/Preguntas';
+import Medicamentos from './components/Medicamentos';
 
 
 
@@ -28,6 +29,9 @@ function App() {
         }
       </div> */}
       <Main/>
+      </div>
+      <div>
+      <Medicamentos/>
       </div>
       <div>
       <Preguntas/>
