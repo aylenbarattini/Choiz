@@ -1,0 +1,53 @@
+.NavbarItems{
+    background: linear-gradient(205.22deg, #FFA15C -2.89%, rgba(255, 91, 146, 0.95) 59.15%, #771CFE 125.51%);
+    color: white;
+    height: 458px;
+    width: 100%;
+    font-size: 16px;   
+}
+.nav-links{
+    color: white;
+    text-decoration: none;   
+}
+.grid-nav{
+    list-style: none;
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(6, auto);
+    grid-gap: 15px;
+    width: 65%;
+    margin-left: 25%;
+    margin-top: -50px;
+}
+.navbar-logo{
+    color: white;
+   justify-self: start;
+   margin-left: 40px;
+   cursor: pointer;
+   display: flex;
+}
+.nav-links-button{
+    color: white;
+    text-decoration: none;
+    padding: 9px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 7px;
+    border: 3px double white;
+}
+.frase{
+    font-size: 65px;
+    text-align: left;
+    line-height: 90px;
+    margin-top: 90px;
+    width: 70%;
+    margin-left: 5%;
+
+}
+.contenedor{
+    display: flex;
+}
+.persona{
+   height: 240px;
+   margin-top: 130px;
+}

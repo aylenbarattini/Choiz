@@ -1,25 +1,64 @@
-import logo from './logo.svg';
-import './App.css';
+
+import './Styles/App.scss';
+import Navbar from './components/Navbar/Navbar';
+import Main from './components/Main';
+import Preguntas from './components/Preguntas';
+
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Navbar/>
       </header>
+      <body>
+        <div className="contenedor-body">
+          <p className="frase-body">
+            Las mejores expertas en ginecología  del país están a tu disposición para conversar sin que tengas que salir de tu casa.
+          </p>
+          {/* <div>
+        <button className="button-agendar" onClick={()=> setModalOpen(true)}>  
+          Agendar una consulta
+        </button>
+        {modalOpen && 
+          <Modal>
+          Hola
+          </Modal>
+        }
+      </div> */}
+      <Main/>
+      </div>
+      <div>
+      <Preguntas/>
+      </div>
+      </body>
+      <footer className="footer">
+        <div className="par-f1">
+        <img className="choiz-f" src={'/choizlogo.png'} />
+        <p className="choiz-f">© XCALE HEALTH srl . Todos los derechos reservados.</p>
+        </div>
+        <div className="par-f">
+        ¡Hablemos!
+        <div className="iconos">
+        <div className="cont-i">
+        <img className="iconos-f" src={'/instagram.png'} />
+        </div>
+        <div className="cont-i">
+        <img className="iconos-f" src={'/faceb.png'} />
+        </div>
+        <div className="cont-i">
+        <img className="iconos-f" src={'/wp.png'} />
+        </div>
+        <div className="cont-i">
+        <img className="iconos-f" src={'/sobre.png'} />
+        </div>
+        </div>
+        </div>
+      </footer>
     </div>
   );
 }
 
 export default App;
+

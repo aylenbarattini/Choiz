@@ -1,0 +1,76 @@
+@import "variables.scss";
+
+.App {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.App-header {
+  background-color:white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(10, 10, 10);
+}
+
+.contenedor-body{
+  display: flex;
+}
+.frase-body{
+  font-size: 26px;
+  width: 50%;
+  margin-left: 5%;
+  text-align: left;
+  display: flex;
+}
+.button-agendar{
+  width: 40%;
+  background-color: #B700DB;
+  border-radius: 6px;
+  height: 48px;
+  width: 280px;
+  color: white;
+  font-size: 16px;
+  border: none;
+  align-items: center;
+  margin-top: 40px;
+  margin-left: 10%;
+  box-shadow: 0px 4px 24px 0px #00000040;
+}
+
+.footer{
+  background-color: #727D89;
+  color: white;
+  font-size: 14px;
+  display: flex;
+}
+
+.iconos-f{
+  margin-top: 10px;
+}
+
+.cont-i{
+  border-radius: 50%;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+}
+.iconos{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 15px;
+}
+.par-f1{
+  padding: 5%;
+  align-items: left;
+}
+.par-f{
+  padding: 5%;
+  margin-left: 40%;
+}
+.choiz-f{
+  display: flex;
+  justify-self: center;
+}

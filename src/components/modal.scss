@@ -1,0 +1,67 @@
+
+.modalTemplate .modal {
+    box-sizing: border-box;
+    position: absolute;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 25px;
+    background-color:#FEE5F8;
+    height: 75%;
+    width: 90%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5%;
+
+}
+
+.cruz .occ__modal .occ__modalHeader svg { 
+    text-align: end;
+    cursor: pointer;
+    height: 12px;
+}
+
+.title-modal{
+    font-size: 36px;
+    color: #424B54;
+    font-weight: 400;
+}
+.iconos-modal{
+    opacity: 0.7;
+    height: 60px;
+}
+.numeros{
+    font-size: 15px;
+    color: #B700DB;
+    // display: grid;
+}
+.title-m{
+    color: #424B54;
+    font-size: 12px;
+    font-weight: 100;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 30px;
+}
+.title-1{
+    width: 100%;
+}
+.lineas{
+    display: grid;
+    color: #C4C4C4;
+    transform: rotate(90deg);
+}
+.lineas-2{
+    display: grid;
+    color: #C4C4C4;
+    transform: rotate(90deg); 
+}
+.bot-cruz{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    align-items: end;
+    margin-left:90%;
+}
+.cruz{
+    height: 12px;
+}
