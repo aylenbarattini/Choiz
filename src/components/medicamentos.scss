@@ -1,0 +1,37 @@
+.medicamentos{
+    background-color: #F8F8F8;
+    padding: 12%;
+    color: #7C7C7C;
+    padding-top: 1%;
+}
+.title-table{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 30px;
+    list-style: none;
+    font-size: 14px;
+    text-align: left;
+}
+.title-table-1{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 30px;
+    list-style: none;
+    background-color: white;
+    font-size: 14px;
+    padding: 3%;
+    margin-top: 3px;
+    text-align: left;
+}
+.tituli-izq{
+    text-align: left;
+    margin-left: 4%;
+    font-size: 18px;
+}
+.upper{
+    text-transform: uppercase
+}
+.align-s{
+    justify-content: center;
+    justify-content: space-around;
+}

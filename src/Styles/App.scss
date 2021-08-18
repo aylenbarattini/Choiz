@@ -1,10 +1,8 @@
-@import "variables.scss";
 
 .App {
   text-align: center;
   font-family: 'Roboto', sans-serif;
 }
-
 .App-header {
   background-color:white;
   display: flex;
@@ -13,9 +11,9 @@
   justify-content: center;
   color: rgb(10, 10, 10);
 }
-
 .contenedor-body{
   display: flex;
+  padding: 3%;
 }
 .frase-body{
   font-size: 26px;
@@ -35,21 +33,18 @@
   border: none;
   align-items: center;
   margin-top: 40px;
-  margin-left: 10%;
+  margin-left: 35%;
   box-shadow: 0px 4px 24px 0px #00000040;
 }
-
 .footer{
   background-color: #727D89;
   color: white;
   font-size: 14px;
   display: flex;
 }
-
 .iconos-f{
   margin-top: 10px;
 }
-
 .cont-i{
   border-radius: 50%;
   background-color: white;

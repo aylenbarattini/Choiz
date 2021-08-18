@@ -19,20 +19,12 @@ const Modal = ({children,toggle, alignContent = 'center'}) => {
                         <h4>Vamos a elegir la doctora adecuada según su especialidad y tu necesidad.</h4>
                     </div>
                     <div>
-                    {/* <div className="lineas">
-                        <hr className="linea">
-                        </hr>
-                    </div> */}
                         <img className="iconos-modal" src={'/modal2.png'} />
                         <h5 className="numeros">2.</h5>
                         <h3 className="title-1">Te contactamos por y coordinamos el pago para reservar la fecha.</h3>
                         <h4>Si tenés Swiss Medical es GRATIS* y si no, podes pedir reintegro</h4> 
                         <h5>*Excepto para planes que requieren copago</h5>   
                     </div>
-                    {/* <div className="lineas">
-                        <hr className="linea"> 
-                        </hr>
-                    </div> */}
                     <div>
                         <img className="iconos-modal" src={'/modal3.png'} />
                         <h5 className="numeros">3.</h5>

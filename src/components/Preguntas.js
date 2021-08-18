@@ -1,8 +1,9 @@
 import React, {useEffect, useState} from 'react'
+import Collapse from './Collapse'
 import './preguntas.scss'
 
 const Preguntas = () => {
-    const [faqs, setFaqs] = useState ([])
+    const [faqs, setFaqs, toggle] = useState ([])
 
     const obtenerFaqs = async () => {
         try {
@@ -29,14 +30,21 @@ const Preguntas = () => {
                 <ul>
                     {
                         faqs && faqs.length >=0 && faqs.map(item => { 
-                            return (
-                            <li className="style-li" key= {item.id}>
-                                {item.title} 
-                                <br></br>
-                                {item.description}
-                            </li>
-                            )
-                        })
+                        return (
+                        <li className="style-li" key= {item.id}>
+                            <div className="align-flechita">
+                                {item.title}   
+                            </div>
+                            <div>
+                            <Collapse label='V' className="flechita-v">
+                                <div className="collapse-faqs">{item.description}</div>
+                            </Collapse>
+                            </div>
+                            <hr className="linea-faqs">
+                            </hr> 
+                        </li>
+                        )  
+                    })
                     }
                 </ul>
             </div>

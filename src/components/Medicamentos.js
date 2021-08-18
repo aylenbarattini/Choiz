@@ -10,7 +10,7 @@ const Medicamentos = () => {
             const response = await data.json()
             setMedicamentos(response.data)
         }catch(e) {
-            console.log(e)
+            console.log(e, 'ERRORR')
         }
     }
 
@@ -27,13 +27,71 @@ const Medicamentos = () => {
             </div>
             <div className="listado-medic">
                 <ul>
-                    {
-                        medicamentos && medicamentos.length >=0 && medicamentos.map(item => { 
+                <h5 className="tituli-izq">Pastillas</h5> 
+                <hr></hr>
+                <section className='section-title-med'>
+                        <ul className="title-table">
+                            <li>Marcas que ofrecemos</li>
+                            <li>Laboratorio</li>
+                            <li>Precio(sin cobertura medica)</li>
+                        </ul>
+                        <br></br>
+                </section>
+                {
+                        medicamentos.pills && medicamentos.pills.length >=0 && medicamentos.pills.map((item, index) => { 
                             return (
-                                <li className="style-li" key= {item.pills}>
-                                {item.brand} 
-                               
-                            </li>
+                                <li className="title-table-1" key={index}>
+                                    <div className="upper">{item.brand}</div>
+                                    <div>{item.laboratory}</div>
+                                    <div>${item.price}</div>
+                                </li>
+                            )
+                        })
+                    }
+                </ul>
+                <ul>
+                <h5 className="tituli-izq">Anillos</h5> 
+                <hr></hr>
+                <section className='section-title-med'>
+                        <ul className="title-table">
+                            <li>Marcas que ofrecemos</li>
+                            <li>Laboratorio</li>
+                            <li>Precio(sin cobertura medica)</li>
+                            <br></br>
+                        </ul>
+                    </section>
+
+                {
+                        medicamentos.rings && medicamentos.rings.length >=0 && medicamentos.rings.map((item, index) => { 
+                            return (
+                                <li className="title-table-1" key={index}>
+                                    <div className="upper">{item.brand}</div>
+                                    <div className="align-s">{item.laboratory}</div>
+                                    <div>${item.price}</div>
+                                </li>
+                            )
+                        })
+                    }
+                </ul>
+                <ul>
+                <h5 className="tituli-izq">Parches</h5> 
+                <hr></hr>
+                <section className='section-title-med'>
+                        <ul className="title-table">
+                            <li>Marcas que ofrecemos</li>
+                            <li>Laboratorio</li>
+                            <li>Precio(sin cobertura medica)</li>
+                        <br></br>
+                        </ul>
+                </section>
+                {
+                        medicamentos.patches && medicamentos.patches.length >=0 && medicamentos.patches.map((item, index) => { 
+                            return (
+                                <li className="title-table-1" key={index}>
+                                    <div className="upper">{item.brand}</div>
+                                    <div>{item.laboratory}</div>
+                                    <div>${item.price}</div>
+                                </li>
                             )
                         })
                     }

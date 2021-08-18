@@ -1,9 +1,9 @@
 .faqs{
     background-color: #FFFFFF;
-    width: 100%;
     justify-content: center;
     text-align: center;
-    padding: 20px;
+    padding: 12%;
+    padding-top:1%;
 }
 .title-faqs{
     font-size: 36px;
@@ -15,4 +15,14 @@
 }
 .style-li{
     list-style: none;
+    padding: 1%;
+    text-align: left;
+    margin: 5px;
+    margin-bottom:10px;
+}
+.linea-faqs{
+    color: black;
+}
+.collapse-faqs{
+    font-size: 16px;    
 }

@@ -5,8 +5,6 @@ import Main from './components/Main';
 import Preguntas from './components/Preguntas';
 import Medicamentos from './components/Medicamentos';
 
-
-
 function App() {
   return (
     <div className="App">
@@ -18,16 +16,6 @@ function App() {
           <p className="frase-body">
             Las mejores expertas en ginecología  del país están a tu disposición para conversar sin que tengas que salir de tu casa.
           </p>
-          {/* <div>
-        <button className="button-agendar" onClick={()=> setModalOpen(true)}>  
-          Agendar una consulta
-        </button>
-        {modalOpen && 
-          <Modal>
-          Hola
-          </Modal>
-        }
-      </div> */}
       <Main/>
       </div>
       <div>
